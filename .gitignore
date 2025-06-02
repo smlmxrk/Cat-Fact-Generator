@@ -5,3 +5,12 @@ node_modules
 dist
 .cache
 .idea
+webpack.config.dev.js
+webpack.common.js
+webpack.config.prod.js
+site.webmanifest
+robots.txt
+package.json
+.gitattributes
+.editorconfig
+
