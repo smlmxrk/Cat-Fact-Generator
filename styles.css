@@ -1,1 +1,95 @@
-/* to be filled in */
+@media only screen and (max-width: 600px) {
+  .mobile-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 50px;
+    position: relative;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 21px;
+  }
+}
+
+
+.logo {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 90px;
+  max-width: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0 10px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 30%, #e0e0e0 70%);
+}
+
+.container {
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.project-description {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+
+.fact-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+button {
+  display: inline-block;
+  width: 190px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff9900;
+  color: #ffffff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e68a00;
+}
+
+.disabled-button {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+#fact {
+  margin-bottom: 20px;
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+}
