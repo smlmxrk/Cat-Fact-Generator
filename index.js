@@ -17,12 +17,12 @@ fetchButton.addEventListener("click", async() => {
 });
 
 async function fetchCatFact() {
-  const response = await fetch // api endpoint goes here
+  const response = await fetch("https://catfact.ninja/fact?max_length=140"); // api endpoint goes here
   const data = await response.json();
 
   // pull fact from JSON data
-  const randomFact = data.data[0].attributes.body;
+  const randomFact = data.fact;
 
   //display the fact
-  fetchDisplay.textContent = randomFact;
+  factDisplay.textContent = randomFact;
 }
