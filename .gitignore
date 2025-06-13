@@ -13,4 +13,5 @@ robots.txt
 package.json
 .gitattributes
 .editorconfig
+package-lock.json
 

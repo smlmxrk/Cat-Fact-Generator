@@ -51,66 +51,40 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
   function launchCatRain() {
-
     if (!window.particlesContainer) {
+      console.warn("Particles container not ready");
       return;
     }
 
-    const emitterOptions = {
-      life: {
-        duration: 0.5,
-        count: 1
-      },
+    console.log("Launching permanent green emitter...");
+
+    window.particlesContainer.addEmitter({
+      direction: "bottom",
+      position: { x: 50, y: 0 }, // Top-center
       rate: {
-        delay: 0.05,
-        quantity: 1
+        delay: 0.2,
+        quantity: 5
       },
       size: {
         width: 100,
         height: 0
       },
-      position: {
-        x: 50,
-      }
-    };
-
-    const catParticleSettings = {
-      shape: {
-        type: "image",
-        image: {
-          src: "img/logo.png",
-          width: 32,
-          height: 32
-        }
-      },
-      size: {
-        value: { min: 16, max: 32 }
-      },
-      move: {
-        direction: "bottom",
-        speed: { min: 200, max: 400 },
-        outModes: { default: "out" }
-      },
-      opacity: {
-        value: { min: 0.5, max: 1 },
-        animation: {
-          enable: true,
-          speed: 1,
-          minimumValue: 0.1
-        }
-      },
-      rotate: {
-        value: { min: 0, max: 360 },
-        animation: {
-          enable: true,
-          speed: 60
+      particles: {
+        color: { value: "#00ff00" }, // Bright green
+        shape: { type: "circle" },
+        size: { value: 20 },
+        move: {
+          speed: 2,
+          direction: "bottom",
+          outModes: { default: "out" }
+        },
+        opacity: {
+          value: 1
         }
       }
-    };
-
-    window.particlesContainer.addEmitter({
-      ...emitterOptions,
-      particles: catParticleSettings
     });
   }
+
+
+
 });
