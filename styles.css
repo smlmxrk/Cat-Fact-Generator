@@ -159,11 +159,9 @@ header {
     font-size: 0.95rem;
     padding: 10px 20px;
   }
+
+
 }
 
-.particles-canvas {
-  background: rgba(255, 0, 0, 0.1); /* light red debug background */
-  z-index: 1000 !important;
-  position: fixed !important;
-}
+
 

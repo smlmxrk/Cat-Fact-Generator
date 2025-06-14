@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+  .github-footer-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .github-footer-link img {
+    width: 45px !important;
+    height: 45px !important;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+    border-radius: 50%;
+  }
+
+  .github-footer-link img:hover {
+    opacity: 1;
+    background-color: #555;
+    transform: scale(1.15);
+  }
+</style>
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +34,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div id="tsparticles" class="particles-canvas"></div>
 
 <div class="content-wrapper">
   <header class="card header-card">
@@ -41,6 +63,14 @@
 <footer class="footer">
   <p>Made by Mark</p>
 </footer>
+
+<div class="github-footer-link">
+  <a href="https://github.com/smlmxrk" target="_blank" rel="noopener noreferrer">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+         alt="Github"
+    />
+  </a>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-plugin-emitters"></script>
